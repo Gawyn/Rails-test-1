@@ -1,6 +1,6 @@
 When /^I fill the form with some numerical value$/ do
   fill_in('number', :with => '112')
-  step "I press 'Go!'"
+  click_button 'Go!'
 end
 
 Then /^I should see it written in English$/ do

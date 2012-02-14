@@ -1,0 +1,6 @@
+- if @number
+  = @number
+= form_tag numbers_create_path, :method => 'get' do
+  = label_tag(:number, 'Number:')
+  = text_field_tag(:number)
+  = submit_tag('Go!')
